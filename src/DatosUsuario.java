@@ -1,3 +1,6 @@
+/*
+ * Este programa recoge los datos del usuario y si el email es válido los muestra
+ */
 import java.util.Scanner;
 
 import utilidades.ProcesadorTexto;
@@ -12,9 +15,10 @@ public class DatosUsuario {
         String email = sc.nextLine();
         System.out.print("Introduce tu edad: ");
         int edad = sc.nextInt();
-        boolean emailValido = ProcesadorTexto.esEmailValido(email);
+        //Después de pedir los datos comprobamos si el email es válido
+        boolean emailValido = ProcesadorTexto.esEmailValido(email); //utiliza un metodo estático de la clase ProcesadorTexto
         if(emailValido){
-            Usuario usuario = new Usuario(nombre, edad, email);
+            Usuario usuario = new Usuario(nombre, edad, email); //crea un objeto (variable) nuevo de la clase Usuario
             usuario.mostrarInformacion();
         }else{
             System.out.println("El usuario no puede ser creado porque el email introducido no es válido");
