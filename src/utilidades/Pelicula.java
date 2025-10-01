@@ -24,6 +24,14 @@ public class Pelicula {
         return this.anio;
     }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
     @Override
     public String toString() {
         return titulo + " (" + anio + ")";

@@ -24,6 +24,14 @@ public class Cancion {
         return this.artista;
     }
 
+    public void setTitutlo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setArtista(String artista) {
+        this.artista = artista;
+    }
+
     @Override
     public String toString() {
         return titulo + " - " + artista;
