@@ -1,8 +1,8 @@
 package utilidades;
 
 public class Cancion {
-    String titulo;
-    String artista;
+    private String titulo;
+    private String artista;
 
     // Constructor por defecto
     public Cancion() {
@@ -14,6 +14,14 @@ public class Cancion {
     public Cancion(String titulo, String artista) {
         this.titulo = titulo;
         this.artista = artista;
+    }
+
+    public String getTitutlo() {
+        return this.titulo;
+    }
+
+    public String getArtista() {
+        return this.artista;
     }
 
     @Override
