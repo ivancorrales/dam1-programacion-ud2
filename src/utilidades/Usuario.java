@@ -14,8 +14,11 @@ public class Usuario {
         this.correo = correo;
     }
 
+    public Usuario() {
+    }
+
     // Métodos no estáticos (necesitan un objeto para ser llamados)
-    
+
     public void mostrarInformacion() {
         System.out.println("Nombre: " + nombre);
         System.out.println("Edad: " + edad);
