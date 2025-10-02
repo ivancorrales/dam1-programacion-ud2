@@ -29,13 +29,13 @@ public class DatosUsuario {
             Usuario usuario = new Usuario(nombre, edad, email); //crea un objeto (variable) nuevo de la clase Usuario
             usuario.mostrarInformacion();
         }else{
-            if(edadValida==false){
+            if(!edadValida){
                 System.out.println("Error: Edad no válida");
             }
-            if (emailValido==false) {
+            if (!emailValido) {
                 System.out.println("El usuario no puede ser creado porque el email introducido no es válido");
             }
-            if (nombreValido==false) {
+            if (!nombreValido) {
                 System.out.println("Error: Nombre no válido");
             }
         }
